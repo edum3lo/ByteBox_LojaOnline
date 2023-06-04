@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  
+
+  /* Estilos do contêiner principal */
+  .container {
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+  }
+  
+  .container .logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: auto; /* A altura será ajustada automaticamente proporcionalmente à largura */
+  }
+  
+  /* Estilos do título do formulário */
+  .container h2 {
+    text-align: center;
+    margin-bottom: 4px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /*Texto abaixo de informar...*/
+  .container .instruction {
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Estilos dos campos de entrada */
+  .container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  
+  /* Estilos para agrupar os campos Nome Completo e CPF */
+  .container .row {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  /* Estilos para os campos Nome Completo e CPF */
+  .container .row .half-width {
+    width: 50%;
+    margin-right: 5px;
+  }
+  
+
+  /* Estilos do botão de criar conta */
+  .container button {
+    width: 100%;
+    padding: 20px;
+    background-color: skyblue;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Estilos do botão de criar conta ao passar o mouse */
+
+  .container button:hover {
+    background-color: #45a049;
+  }
+  
+
+  .navbar {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: auto; /* A altura será ajustada automaticamente proporcionalmente à largura */
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* Inverte as cores da imagem para branco */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .container .instruction {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
