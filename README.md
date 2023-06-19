@@ -8,4 +8,4 @@ Link editável
 https://www.figma.com/file/azjM4hZREAEjfsakuZKrtX/Prototipo-ByteBox---PROGWEB?type=design&node-id=0%3A1&t=0QZTmDfTPtl4s2CO-1
 
 Composto por:
-Eduardo Melo e Augusto Borges 
+Eduardo Melo 
