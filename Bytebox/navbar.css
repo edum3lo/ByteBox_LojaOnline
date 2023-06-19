@@ -1,0 +1,32 @@
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .logo {
+    color: aqua;
+    margin-right: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <link rel="stylesheet" href="../globals.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar show-menu">
+      <div class="logo-container">
+        <!-- Logo -->
+        <h1><a href="../index.html" class="logo">BYTE<span>BOX</span></a></h1>
+        <!-- Navegação -->
+        <nav>
+          <ul class="navbar-links"> 
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="quem_somos.html" class="nav-link">Quem Somos</a></li>
+          </ul>
+        </nav>
+        <!-- Ícones da Navbar -->
+        <div class="nav-icon-container">
+          <img src="../carrinho.png"/>
+          <img src="menu.png" class="menu-button" />
+        </div>
+      </div>
+    </div>
+  
+  <div class="container">
+        <h2>CRIE SUA CONTA</h2>
+        <p class="instruction">* Informe os dados abaixo para ter acesso a sua nova conta</p>    
+    
+    <form>
+      <!-- Seção Nome Completo e CPF -->
+      <div class="row">
+        <input type="text" placeholder="Nome completo" class="half-width" required>
+        <input type="text" placeholder="CPF" class="half-width" required>
+      </div>
+      <!-- Seção Data de Nascimento e Celular -->
+      <div class="row">
+        <input type="date" placeholder="Data de Nascimento" class="half-width" required>
+        <input type="tel" placeholder="Celular" class="half-width" required>
+      </div>
+      <!-- Campo E-mail -->
+      <input type="email" placeholder="E-mail" style="width: calc(100% - 5px);" required>
+      <!-- Seção Crie sua Senha e Confirme sua Senha -->
+      <div class="row">
+        <input type="password" placeholder="Crie sua Senha" class="half-width" required>
+        <input type="password" placeholder="Confirme sua Senha" class="half-width" required>
+      </div>
+      <button type="submit">CRIAR CONTA</button>
+      <p class="instruction">Já possui conta? ir para <a href="login.html" class="nav-link">Login</a></p>   
+    </form>
+  </div>
+</body>
+</html>

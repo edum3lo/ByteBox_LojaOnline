@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ByteBox - Carrinho de Compras</title>
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="stylesheet" href="../globals.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <div class="navbar show-menu">
+      <div class="logo-container">
+        <!-- Logo -->
+        <h1><a href="../index.html" class="logo">BYTE<span>BOX</span></a></h1>
+        <!-- Navegação -->
+        <nav>
+          <ul class="navbar-links"> 
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="quem_somos.html" class="nav-link">Quem Somos</a></li>
+          </ul>
+        </nav>
+        <!-- Ícones da Navbar -->
+        <div class="nav-icon-container">
+          <img src="../carrinho.png"/>
+          <img src="menu.png" class="menu-button" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="cart-items">
+    <div class="cart-item">
+      <img src="produto1.jpg" alt="Produto 1">
+      <div class="item-info">
+        <h3>Produto 1</h3>
+        <p>Descrição do Produto 1</p>
+      </div>
+      <div class="item-quantity">
+        <span>QT:</span>
+        <input type="number" min="1" value="1">
+      </div>
+      <div class="item-price">
+        <span>Preço:</span>
+        <span>R$ 99,99</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="shipping-box">
+    <input type="text" placeholder="CEP">
+    <button class="calculate-button">CALCULAR</button>
+  </div>
+
+  <div class="checkout-box">
+    <button class="finalize-button" onclick="window.location.href='pagamento.html'">FINALIZAR PEDIDO</button>
+    <p><a href="../index.html">Continuar comprando</a></p>
+  </div>
+  
+
+  <script src="carrinho.js"></script>
+</body>
+</html>

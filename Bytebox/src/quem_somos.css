@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .esquerda {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .direita {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2, h3, p {
+    margin: 0 0 10px 0;
+  }
+  
+  img {
+    max-width: 40%;
+    height: auto;
+  }
+  

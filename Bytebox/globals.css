@@ -1,0 +1,365 @@
+/* Definições globais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização da Navbar */
+.conteudo-interno-cabecalho {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px black;
+    z-index: 99;
+}
+
+.nav-link {
+    color: #fff; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.navbar>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo {
+    color: aqua;
+    margin-right: auto;
+}
+
+.logo span {
+    color: white; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+.nav-icon-container img:last-child{
+    width: 50px;
+}
+
+nav ul li {
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button{
+    display: none;
+}
+
+/* Estilização do Cabeçalho */
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.header-bottom-side-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-bottom-side-left h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img{
+    width: 75%;
+}
+
+header{
+    background-image: radial-gradient(black, rgb(0, 133, 122))
+}
+
+.header {
+    background-color: aqua;
+    padding: 2rem;
+}
+
+.conteudo-interno-header {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.conteudo-interno-header h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(0, 27, 25);
+    justify-content: stretch;
+}
+
+.conteudo-interno-header p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-interno-header button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 999px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+    margin-top: 1.5rem;
+}
+
+.conteudo-interno-header button:hover {
+    background-color: rgb(1, 176, 179);
+}
+
+/* Estilos para dispositivos com largura de tela menor ou igual a 768px */
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .menu-button{
+        display: block;
+    }
+
+    .header-bottom-side{
+        flex-direction: 1.2rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav{
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+/*Header*/
+
+/*Main*/
+main{
+    background-color: whitesmoke;
+}
+
+.gray-background{
+    background-color: rgb(0, 0, 0);
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+}
+
+.cols-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; 
+    justify-content: center; /* Centraliza as colunas */
+    align-items: center; /* Centraliza verticalmente as colunas */
+    padding: 3rem 6rem;
+}
+
+.produto {
+    width: 400px; /* Altere o valor do width conforme necessário */
+    height: auto; /* A altura será ajustada automaticamente proporcionalmente à largura */
+}
+
+.title {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+}
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cols-3 img{
+    max-width: 100%;
+}
+
+.cols-4 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cols-5{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translate(-5px);
+}
+
+.lancamento-secao{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: aqua;
+    padding: 2rem;
+}
+
+.lancamento-abaixo{
+    width: 100px;
+    height: 5px;
+    background: aqua;
+    border-radius: 9999px;
+    margin: 1px auto 0 auto;
+}
+
+.titulo-secao{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitulo-abaixo{
+    width: 100px;
+    height: 5px;
+    background: black;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+.produto {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.nome-produto{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.rate{
+    color: blue;
+    font-size: 1.3rem;
+}
+
+
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto p {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+  .nome-produto {
+    text-decoration: none;
+    color: black;
+  }
+
+<a href="descricao_produto.html" class="nome-produto">Nome do Produto</a>
+
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
